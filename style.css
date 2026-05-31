@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FC817A;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+nav {
+    display: flex;
+    /* justify-self: center; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 90vw;
+    /* border: 2px solid black; */
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.logo>span {
+    color: #f4f4f4;
+    margin: 12px;
+}
+
+.logo>h3 {
+    color: #f4f4f4;
+}
+
+.social {
+    color: #f4f4f4;
+    gap: 15px;
+    display: flex;
+
+    flex-direction: row;
+}
+
+.social_logo {
+    align-items: center;
+
+
+}
+
+.social_logo>span {
+    background-color: #f4f4f4;
+    color: #FC817A;
+    border-radius: 100%;
+    text-align: center;
+    /* height: 30px;
+    width: 30px; */
+    margin-left: 15px;
+    padding: 5px;
+}
+
+section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.card1 {
+    /* box-shadow: 3px #000000;
+     */
+    /* box-shadow: #9e6464 7px 7px 7px; */
+    margin-right: 20px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 375px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 45px;
+}
+
+.card1:hover {
+    box-shadow: #9e6464 10px 10px 10px;
+}
+
+.photo>img {
+    height: 225px;
+    width: 225px;
+    border-radius: 100%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    margin: 10px;
+    font-size: x-large;
+    font-weight: 700;
+    color: #f4f4f4;
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sep {
+    font-size: 55px;
+    color: #ffb6b6;
+}
+
+.id {
+    font-size: large;
+    font-weight: 600;
+    color: #f4f4f4;
+}
+
+.bio {
+    margin: 10px;
+    font-size: medium;
+    font-weight: 600;
+    color: #f4f4f4;
+}
+
+.mail {
+    margin: 10px;
+    font-size: medium;
+    font-weight: 500;
+    color: #f4f4f4;
+
+}
+
+.card2 {
+    width: 50vw;
+}
+
+.cont_1 {
+    text-align: end;
+    color: #f4f4f4;
+}
+
+.notice {
+    font-size: 40px;
+}
+
+.not_2 {
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.not_3 {
+    margin-top: 25px;
+}
+
+
+.cont_2 {
+    margin-top: 50px;
+    color: #f4f4f4;
+}
+
+.service {
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.con {
+
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; */
+}
+
+.feat {
+    display: flex;
+}
+
+.feat>div>span {
+    margin: 10px;
+}
+
+.feat :nth-child(2) {
+    align-self: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+.goal {
+    margin-top: 30px;
+}
+
+.github-link {
+    margin-top: 20px;
+}
+
+.github-link>a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.github-link>a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 920px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1 {
+        margin-bottom: 30px;
+        padding: 20px;
+        height: calc(100% + 100px);
+
+    }
+
+    .cont_1 {
+        text-align: center;
+        color: #f4f4f4;
+    }
+
+    .card2 {
+        width: 75vw;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 620px) {
+    .card1 {
+        width: 75vw;
+        padding: 20px;
+        height: calc(100% + 100px);
+
+    }
+
+    .photo>img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .con {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .card1 {
+        padding: 20px;
+        height: calc(100% + 100px);
+    }
+
+    .photo>img {
+        height: 175px;
+        width: 175px;
+    }
+
+    .notice {
+        font-size: 30px;
+    }
+
+    .con {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo>h3 {
+        font-size: 15px;
+    }
+
+    .social_logo>span {
+        padding: 3px;
+    }
+
+    span.material-symbols-outlined {
+        font-size: 18px;
+    }
+
+}
